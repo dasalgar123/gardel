@@ -14,7 +14,7 @@ const VistaACatalogo = ({
   return (
     <div className="catalogo-container">
       <div className="catalogo-productos">
-        <ElementoTitulo texto="Gardel" />
+        <ElementoTitulo texto="Catálogo de Ropa" />
         <h2>{categoriaSeleccionada}</h2>
         <div className="catalogo-grid">
           {productos.length > 0 ? (
