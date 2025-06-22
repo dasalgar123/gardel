@@ -6,7 +6,6 @@ import Carrucel from './componentes/elementos/ElementoCarrucel.js';
 import Catalogo from './componentes/vistas/VistaACatalogo.js';
 import Footer from './componentes/elementos/ElementoFooter.js';
 import ElementoNavProductos from './componentes/elementos/ElementoNavProductos.js';
-import BotonWhatsapp from './componentes/elementos/BotonWhatsapp';
 import FiltroPrecio from './componentes/elementos/FiltroPrecio';
 
 // Servicios API
