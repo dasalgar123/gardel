@@ -10,6 +10,8 @@ const VistaACatalogo = ({
   carrito,
   agregarAlCarrito,
   vaciarCarrito,
+  actualizarCantidad,
+  eliminarDelCarrito,
 }) => {
   return (
     <div className="catalogo-container">
@@ -42,7 +44,12 @@ const VistaACatalogo = ({
         </div>
       </div>
 
-      <Carrito items={carrito} vaciarCarrito={vaciarCarrito} />
+      <Carrito 
+        items={carrito} 
+        vaciarCarrito={vaciarCarrito}
+        actualizarCantidad={actualizarCantidad}
+        eliminarDelCarrito={eliminarDelCarrito}
+      />
     </div>
   );
 };

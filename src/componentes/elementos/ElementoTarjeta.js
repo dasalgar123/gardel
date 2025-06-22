@@ -42,7 +42,8 @@ const ElementoTarjeta = ({
       cantidad, 
       color: colorSeleccionado,
       talla: tallaSeleccionada,
-      precio_unitario: precio
+      precio_unitario: precio,
+      imagen: imagen
     });
   };
 

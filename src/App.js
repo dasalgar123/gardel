@@ -71,6 +71,18 @@ function App() {
     setCarrito([]);
   };
 
+  const actualizarCantidad = (index, nuevaCantidad) => {
+    setCarrito((prev) => 
+      prev.map((item, i) => 
+        i === index ? { ...item, cantidad: nuevaCantidad } : item
+      )
+    );
+  };
+
+  const eliminarDelCarrito = (index) => {
+    setCarrito((prev) => prev.filter((_, i) => i !== index));
+  };
+
   // Obtener categorías únicas de los productos
   const categoriasUnicas = ['Todos', ...new Set(productos.map(p => p.categoria_nombre))];
 
@@ -140,6 +152,8 @@ function App() {
           carrito={carrito}
           agregarAlCarrito={handleAgregarAlCarrito}
           vaciarCarrito={vaciarCarrito}
+          actualizarCantidad={actualizarCantidad}
+          eliminarDelCarrito={eliminarDelCarrito}
         />
       </main>
 
