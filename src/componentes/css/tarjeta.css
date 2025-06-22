@@ -46,7 +46,7 @@
 .card-description { 
   font-size: 0.9rem; 
   color: #dddddd; /* Color gris claro para la descripción */
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   flex-grow: 1; /* Empuja el precio y el botón hacia abajo */
 }
 
